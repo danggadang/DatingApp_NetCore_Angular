@@ -7,6 +7,8 @@ import { HomeComponent } from "./home/home.component";
 import { RegisterComponent } from "./register/register.component";
 import { FormsModule } from "@angular/forms";
 import { AuthService } from "./_services/auth.service";
+import { ErrorInterceptorProvider } from './_services/error.interceptor';
+import { BsDropdownModule } from 'ngx-bootstrap';
 
 @NgModule({
 	declarations: [
@@ -15,8 +17,8 @@ import { AuthService } from "./_services/auth.service";
 		HomeComponent,
 		RegisterComponent,
 	],
-	imports: [BrowserModule, HttpClientModule, FormsModule],
-	providers: [AuthService],
+	imports: [BrowserModule, HttpClientModule, FormsModule, BsDropdownModule.forRoot()],
+	providers: [AuthService, ErrorInterceptorProvider],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}
