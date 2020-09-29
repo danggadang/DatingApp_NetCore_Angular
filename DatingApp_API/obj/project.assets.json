@@ -4576,28 +4576,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Maxsys\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\wamp64\\www\\NET.CORE\\DatingApp\\datingapp_api\\DatingApp_API.csproj",
+      "projectUniqueName": "C:\\wamp64\\www\\NET_CORE\\DatingApp_NetCore_Angular\\DatingApp_API\\DatingApp_API.csproj",
       "projectName": "DatingApp_API",
-      "projectPath": "C:\\wamp64\\www\\NET.CORE\\DatingApp\\datingapp_api\\DatingApp_API.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\wamp64\\www\\NET.CORE\\DatingApp\\datingapp_api\\obj\\",
+      "projectPath": "C:\\wamp64\\www\\NET_CORE\\DatingApp_NetCore_Angular\\DatingApp_API\\DatingApp_API.csproj",
+      "packagesPath": "C:\\Users\\Maxsys\\.nuget\\packages\\",
+      "outputPath": "C:\\wamp64\\www\\NET_CORE\\DatingApp_NetCore_Angular\\DatingApp_API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Maxsys\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4657,7 +4655,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

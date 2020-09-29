@@ -7,8 +7,13 @@ import { HomeComponent } from "./home/home.component";
 import { RegisterComponent } from "./register/register.component";
 import { FormsModule } from "@angular/forms";
 import { AuthService } from "./_services/auth.service";
-import { ErrorInterceptorProvider } from './_services/error.interceptor';
-import { BsDropdownModule } from 'ngx-bootstrap';
+import { ErrorInterceptorProvider } from "./_services/error.interceptor";
+import { BsDropdownModule } from "ngx-bootstrap";
+import { MemberListComponent } from "./member-list/member-list.component";
+import { ListsComponent } from "./lists/lists.component";
+import { MessagesComponent } from "./messages/messages.component";
+import { RouterModule } from "@angular/router";
+import { appRoutes } from "./routes";
 
 @NgModule({
 	declarations: [
@@ -16,8 +21,17 @@ import { BsDropdownModule } from 'ngx-bootstrap';
 		NavComponent,
 		HomeComponent,
 		RegisterComponent,
+		MemberListComponent,
+		ListsComponent,
+		MessagesComponent,
 	],
-	imports: [BrowserModule, HttpClientModule, FormsModule, BsDropdownModule.forRoot()],
+	imports: [
+		BrowserModule,
+		HttpClientModule,
+		FormsModule,
+		BsDropdownModule.forRoot(),
+		RouterModule.forRoot(appRoutes),
+	],
 	providers: [AuthService, ErrorInterceptorProvider],
 	bootstrap: [AppComponent],
 })
